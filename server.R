@@ -18,8 +18,8 @@ shinyServer(function(input, output) {
   
   
   output$plot <- renderPlot({
-    if(is.null(input$txtFile)) {
-      return(null)
+    if(is.null(input$txtFile) || is.null(input$modelFile)){
+      return(NULL)
     } else {
       textData = readLines(file(input$txtFile$datapath), encoding = "UTF-8")
       textData  =  str_replace_all(textData, "<.*?>", "") 
