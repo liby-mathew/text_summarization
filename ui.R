@@ -45,13 +45,13 @@ shinyUI(fluidPage(
                            
                            h4(p("Data input")),
                            
-                           p("This app supports only text file (.txt) data file and udpipe model file (.udpipe)", align="justify"),
+                           p("This app supports only text data file (.txt) and udpipe model file (.udpipe)", align="justify"),
                            
                            p("Please refer to the link below for sample txt file and english udpipe model file."),
                            a(href="https://github.com/liby-mathew/text_summarization/blob/master/Chandrayaan2.txt"
                              ,"Sample data input file"),   
                            br(),
-                           a(href="https://github.com/bnosac/udpipe.models.ud/blob/master/models/english-ud-2.1-20180111.udpipe"
+                           a(href="https://github.com/liby-mathew/text_summarization/blob/master/english-ud-2.1-20180111.udpipe"
                              ,"Sample udpipe model file"),   
                            
                            br(),
