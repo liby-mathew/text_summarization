@@ -29,9 +29,9 @@ shinyUI(fluidPage(
       h2(""),
       h3("Submitted By"),
       h3(""),
-      h4("Liby Mathew - 11915062"),
-      h4("Sandeep Ramesh - 11915016"),
-      h4("Hari Prasad Reddy - 11915006")
+      h5("Liby Mathew - 11915062"),
+      h5("Sandeep Ramesh - 11915016"),
+      h5("Hari Prasad Reddy - 11915006")
       
     ),
     
