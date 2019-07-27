@@ -6,7 +6,7 @@ shinyUI(fluidPage(
       ".title {margin: auto; width: 800px}"
     )
   ),
-  tags$div(class="title", titlePanel("ISB Question-3 Assignment")),
+  tags$div(class="title", titlePanel("Text Analytics - Assignment - Q3")),
   hr(),
   
   # Sidebar layout with input and output definitions ----
