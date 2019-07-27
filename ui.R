@@ -57,15 +57,15 @@ shinyUI(fluidPage(
                              'and udpipe model file. You can also change the POS tags for different results')),
                   
                   tabPanel("Co-occurence Graph", 
-                           withSpinner(plotOutput('plot')),
+                           withspinner(plotOutput('plot')),
                            textOutput("txt")),
                   
                   
                   tabPanel("Word Cloud",
-                           withSpinner(plotOutput('wcloud', width = "100%"))),
+                           withspinner(plotOutput('wcloud', width = "100%"))),
                   
                   tabPanel("Data",
-                           withSpinner(dataTableOutput('datatable')))
+                           withspinner(dataTableOutput('datatable')))
                   
       ) 
     )
