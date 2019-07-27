@@ -27,7 +27,11 @@ shinyUI(fluidPage(
                          choices = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN", "Adverb" = "ADV", "Verb" = "VERB"),
                          selected = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN")),
       h2(""),
-      h2("Submitted By")
+      h3("Submitted By"),
+      h3(""),
+      h4("Liby Mathew - 11915062"),
+      h4("Sandeep Ramesh - 11915016"),
+      h4("Hari Prasad Reddy - 11915006")
       
     ),
     
