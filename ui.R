@@ -15,18 +15,18 @@ shinyUI(fluidPage(
     # Sidebar panel for inputs ----
     sidebarPanel(
       
-      # Input: Select a file ----
+      # Input: Select a text file ----
       fileInput("txtFile", "Choose Text File",
                 multiple = FALSE,
                 accept = c(".txt", ".TXT")),
-      # Input: Select a file ----
+      # Input: Select a udpipe file ----
       fileInput("modelFile", "Choose Model File",
                 multiple = FALSE,
                 accept = c( ".udpipe")),
       checkboxGroupInput("checkbox", label = h3("Part-Of-Speech Tags"), 
                          choices = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN", "Adverb" = "ADV", "Verb" = "VERB"),
                          selected = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN")),
-      h2(""),
+      h2(""), h2(""),
       h3("Submitted By"),
       h3(""),
       h5("Liby Mathew - 11915062"),
@@ -48,7 +48,7 @@ shinyUI(fluidPage(
                            p("This app supports only text file (.txt) data file and udpipe model file (.udpipe)", align="justify"),
                            
                            p("Please refer to the link below for sample txt file and english udpipe model file."),
-                           a(href=" "
+                           a(href="https://github.com/liby-mathew/text_summarization/blob/master/Chandrayaan2.txt"
                              ,"Sample data input file"),   
                            br(),
                            a(href="https://github.com/bnosac/udpipe.models.ud/blob/master/models/english-ud-2.1-20180111.udpipe"
