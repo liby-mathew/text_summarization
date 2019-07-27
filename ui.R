@@ -25,7 +25,7 @@ shinyUI(fluidPage(
                 accept = c( ".udpipe")),
       checkboxGroupInput("checkbox", label = h3("Part-Of-Speech Tags"), 
                          choices = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN", "Adverb" = "ADV", "Verb" = "VERB"),
-                         selected = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN"))
+                         selected = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN")),
       h5("This is a static text")
     ),
     
