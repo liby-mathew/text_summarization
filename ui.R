@@ -26,7 +26,8 @@ shinyUI(fluidPage(
       checkboxGroupInput("checkbox", label = h3("Part-Of-Speech Tags"), 
                          choices = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN", "Adverb" = "ADV", "Verb" = "VERB"),
                          selected = list("Adjective" = "ADJ", "Noun" = "NOUN", "Proper Noun" = "PROPN")),
-      h5("This is a static text")
+      h2("\n\nSubmitted By"),
+      
     ),
     
     # Show a plot of the generated distribution
