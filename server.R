@@ -18,9 +18,12 @@ shinyServer(function(input, output) {
   
   
   output$plot <- renderPlot({
-    if(is.null(input$txtFile) || is.null(input$modelFile)){
+    if(is.null(input$txtFile)) {
       return(NULL)
     } else {
+      if(is.null(input$modelFile)){
+        datapath = "https://github.com/liby-mathew/text_summarization/blob/master/english-ud-2.1-20180111.udpipe"
+      }
       textData = readLines(file(input$txtFile$datapath), encoding = "UTF-8")
       textData  =  str_replace_all(textData, "<.*?>", "") 
       model = udpipe_load_model(input$modelFile$datapath)  
